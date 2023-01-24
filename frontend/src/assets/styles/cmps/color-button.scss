@@ -1,0 +1,30 @@
+.circle{
+     width: 350px;
+     height: 350px;
+     border: 0;
+     cursor: pointer;
+}
+.quarter-circle-top-left{
+    border-radius: 0 0 350px 0;
+    transform: rotateZ(-180deg) rotateX(40deg);
+    background-color: rgb(169, 27, 27);
+    border: 10px outset rgb(101, 3, 3);
+}
+.quarter-circle-top-right{
+     border-radius: 0 0 0 350px;
+     transform: rotateZ(-180deg) rotateX(40deg);
+     background-color: rgb(73, 216, 73);
+     border: 10px outset rgb(4, 71, 7);
+}
+.quarter-circle-bottom-left{
+     border-radius: 0 350px 0 0;
+     transform: rotateZ(-180deg) rotateX(-40deg);
+     background-color: rgb(13, 64, 176);
+     border: 10px outset rgb(15, 14, 91);
+}
+.quarter-circle-bottom-right{
+     border-radius: 350px 0 0 0;
+     transform: rotateZ(-180deg) rotateX(-40deg);
+     background-color: rgb(200, 200, 18);
+     border: 10px outset rgb(109, 126, 10);
+}
