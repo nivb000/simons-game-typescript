@@ -4,7 +4,8 @@ var utilService = require('./util.service')
 
 module.exports = {
     query,
-    save
+    save,
+    remove
 }
 
 function query() {
@@ -24,6 +25,14 @@ function save(round) {
         gRounds.push(round)
     }
     return _saveRoundsToFile().then(() => round)
+}
+
+function remove() {
+    if(gRounds.length !== 0){
+        gRounds.splice(0)
+        _saveRoundsToFile()
+    }
+    return Promise.resolve()
 }
 
 function _saveRoundsToFile() {
