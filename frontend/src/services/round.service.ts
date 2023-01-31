@@ -18,8 +18,8 @@ function getById(roundId: string) {
     return httpService.get(`${KEY}/${roundId}`)
 }
 
-function remove(roundId: string) {
-    return httpService.delete(`${KEY}/${roundId}`)
+function remove() {
+    return httpService.delete(KEY)
 }
 
 function save(round: Round) {

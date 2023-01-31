@@ -25,6 +25,11 @@ app.get('/api/round', (req, res) => {
     roundService.query()
         .then(rounds => res.send(rounds))
 })
+// reset rounds
+app.delete('/api/round/', (req, res) => {
+    roundService.remove()
+        .then(() => res.send({ msg: "Removed Successfully" }))
+})
 // get all stats
 app.get('/api/stats/', (req, res) => {
     gameStatsService.query()

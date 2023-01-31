@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { HandleSceneProps } from '../interfaces/handleSceneProps'
-import { Stats } from "../interfaces/stats"
 import { Rounds } from "../interfaces/round"
 import gameOverSound from '../assets/sounds/game-over.mp3'
 // @ts-ignore
@@ -68,6 +67,7 @@ export const PlayScene: React.FC<HandleSceneProps> = ({ handleScene }) => {
     }
     //LOST
     if (!verifiedMove) {
+      roundService.remove()
       rounds[currRound].roundOver = true
       new Audio(gameOverSound).play()
       document.title = `Simon's Game score: ${0}`
