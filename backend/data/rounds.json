@@ -1,1 +1,352 @@
-[]
+[
+  {
+    "roundNumber": 1,
+    "sequence": [
+      "red"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 2,
+    "sequence": [
+      "red",
+      "blue"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 3,
+    "sequence": [
+      "red",
+      "blue",
+      "red"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 4,
+    "sequence": [
+      "red",
+      "blue",
+      "red",
+      "blue"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 5,
+    "sequence": [
+      "red",
+      "blue",
+      "red",
+      "blue",
+      "blue"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 6,
+    "sequence": [
+      "red",
+      "blue",
+      "red",
+      "blue",
+      "blue",
+      "red"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 7,
+    "sequence": [
+      "red",
+      "blue",
+      "red",
+      "blue",
+      "blue",
+      "red",
+      "blue"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 8,
+    "sequence": [
+      "red",
+      "blue",
+      "red",
+      "blue",
+      "blue",
+      "red",
+      "blue",
+      "green"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 9,
+    "sequence": [
+      "red",
+      "blue",
+      "red",
+      "blue",
+      "blue",
+      "red",
+      "blue",
+      "green",
+      "green"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 10,
+    "sequence": [
+      "red",
+      "blue",
+      "red",
+      "blue",
+      "blue",
+      "red",
+      "blue",
+      "green",
+      "green",
+      "yellow"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 11,
+    "sequence": [
+      "red",
+      "blue",
+      "red",
+      "blue",
+      "blue",
+      "red",
+      "blue",
+      "green",
+      "green",
+      "yellow",
+      "green"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 12,
+    "sequence": [
+      "red",
+      "blue",
+      "red",
+      "blue",
+      "blue",
+      "red",
+      "blue",
+      "green",
+      "green",
+      "yellow",
+      "green",
+      "green"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 13,
+    "sequence": [
+      "red",
+      "blue",
+      "red",
+      "blue",
+      "blue",
+      "red",
+      "blue",
+      "green",
+      "green",
+      "yellow",
+      "green",
+      "green",
+      "blue"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 14,
+    "sequence": [
+      "red",
+      "blue",
+      "red",
+      "blue",
+      "blue",
+      "red",
+      "blue",
+      "green",
+      "green",
+      "yellow",
+      "green",
+      "green",
+      "blue",
+      "blue"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 15,
+    "sequence": [
+      "red",
+      "blue",
+      "red",
+      "blue",
+      "blue",
+      "red",
+      "blue",
+      "green",
+      "green",
+      "yellow",
+      "green",
+      "green",
+      "blue",
+      "blue",
+      "red"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 16,
+    "sequence": [
+      "red",
+      "blue",
+      "red",
+      "blue",
+      "blue",
+      "red",
+      "blue",
+      "green",
+      "green",
+      "yellow",
+      "green",
+      "green",
+      "blue",
+      "blue",
+      "red",
+      "yellow"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 17,
+    "sequence": [
+      "red",
+      "blue",
+      "red",
+      "blue",
+      "blue",
+      "red",
+      "blue",
+      "green",
+      "green",
+      "yellow",
+      "green",
+      "green",
+      "blue",
+      "blue",
+      "red",
+      "yellow",
+      "green"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 18,
+    "sequence": [
+      "red",
+      "blue",
+      "red",
+      "blue",
+      "blue",
+      "red",
+      "blue",
+      "green",
+      "green",
+      "yellow",
+      "green",
+      "green",
+      "blue",
+      "blue",
+      "red",
+      "yellow",
+      "green",
+      "green"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 19,
+    "sequence": [
+      "red",
+      "blue",
+      "red",
+      "blue",
+      "blue",
+      "red",
+      "blue",
+      "green",
+      "green",
+      "yellow",
+      "green",
+      "green",
+      "blue",
+      "blue",
+      "red",
+      "yellow",
+      "green",
+      "green",
+      "red"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  },
+  {
+    "roundNumber": 20,
+    "sequence": [
+      "red",
+      "blue",
+      "red",
+      "blue",
+      "blue",
+      "red",
+      "blue",
+      "green",
+      "green",
+      "yellow",
+      "green",
+      "green",
+      "blue",
+      "blue",
+      "red",
+      "yellow",
+      "green",
+      "green",
+      "red",
+      "red"
+    ],
+    "playerInput": [],
+    "roundOver": false
+  }
+]

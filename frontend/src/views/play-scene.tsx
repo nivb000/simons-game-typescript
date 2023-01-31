@@ -11,25 +11,24 @@ import { statsService } from '../services/stats.service'
 
 export const PlayScene: React.FC<HandleSceneProps> = ({ handleScene }) => {
 
-  const [isQuery, setIsQuery] = useState<boolean>(true)
   const [rounds, setRounds] = useState<Rounds>([])
-  const [currRound, setCurrRound] = useState<number>(1)
+  const [currRound, setCurrRound] = useState<number>(0)
   const [isPlaying, setIsPlaying] = useState<boolean>(false)
   const [stats, setStats] = useState({ highScore: 0 })
   const [currScore, setCurrScore] = useState<number>(0)
 
 
   useEffect(() => {
-    if (isQuery) {
-      Promise.all([statsService.queryStats(), roundService.query()])
-        .then(([stats, rounds]) => {
-          setStats(stats);
-          setRounds(rounds);
-          setIsPlaying(true);
-          setIsQuery(false);
-        });
-    }
+    initGame()
   }, [])
+
+
+  const initGame = async () => {
+    const [stats, rounds] = await Promise.all([statsService.queryStats(), roundService.query()])
+    setStats(stats)
+    setRounds(rounds)
+    setIsPlaying(true)
+  }
 
   const handlePlayerMoves = (color: string) => {
     if (typeof rounds !== "undefined") {
@@ -76,11 +75,20 @@ export const PlayScene: React.FC<HandleSceneProps> = ({ handleScene }) => {
     }
   }
 
-  const handleGameFinished = () => {
-    statsService.saveStats(stats)
-      .then(setCurrScore(0))
+  const handleGameFinished = async () => {
+    await statsService.saveStats(stats)
+    setCurrScore(0)
     setCurrRound(0)
     setIsPlaying(false)
+  }
+
+  const handlePlayAgain = () => {
+    setTimeout(() => {
+      handleScene(true) 
+    }, 0);
+    setTimeout(() => {
+      handleScene(false)
+    }, 1);
   }
 
 
@@ -90,7 +98,7 @@ export const PlayScene: React.FC<HandleSceneProps> = ({ handleScene }) => {
       <button className="btn-quit" onClick={() => handleScene(true)}>QUIT</button>
       {!isPlaying &&
         <button className="btn-playagain"
-          onClick={() => handleScene(true)}>Play Again</button>}
+          onClick={handlePlayAgain}>Play Again</button>}
 
       <div className="stats">
         <p className="flex space-between">score: <span>{currScore}</span></p>
