@@ -1,0 +1,12 @@
+.game-board{
+    display: grid;
+    grid-template-areas: 
+    'a b'
+    'c d';
+    place-content: center;
+    gap: 20px;
+}
+.flag-turn{
+    font-size: 2rem;
+    text-align: right;
+}

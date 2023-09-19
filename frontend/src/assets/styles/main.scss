@@ -1,0 +1,11 @@
+@import './base.scss';
+@import './helpers.scss';
+
+//VIEWS
+@import './views/start-scene.scss';
+@import './views/play-scene.scss';
+
+
+//CMPS
+@import './cmps/color-button.scss';
+@import './cmps/game-board.scss';

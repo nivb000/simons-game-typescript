@@ -1,0 +1,41 @@
+.start-scene {
+    height: 90vh;
+    text-align: center;
+
+    h1 {
+        font-size: 7rem;
+        background: linear-gradient(90deg, #07f79b, #01442a);
+        border-radius: 15px;
+        animation: animate 20s linear infinite;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    button {
+        border: 0;
+        background: transparent;
+        color: white;
+        font-size: 4rem;
+        cursor: pointer;
+    }
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+
+    100% {
+        filter: hue-rotate(0deg);
+    }
+}
